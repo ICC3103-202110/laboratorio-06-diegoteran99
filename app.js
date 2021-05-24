@@ -1,9 +1,14 @@
 const {getTitle} = require('./view')
 
-function app(state, update, view) {
-    console.clear()
-    console.log(getTitle)
-};
+async function app(state, update, view) {
+    while (true) {
+        const {model, currentView} = state
+        const {title, table} = currentView
+        console.clear()
+        console.log(title)
+        
+    }    
+}
 
 module.exports = {
     app
